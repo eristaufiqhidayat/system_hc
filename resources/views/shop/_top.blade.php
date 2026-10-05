@@ -1,0 +1,1 @@
+<div class="p-top"><img src="{{ asset('images/logo.png') }}" alt="{{ config('catering.name') }}"><div class="col grow"><b>{{ config('catering.name') }}</b><span class="sub">oleh {{ config('catering.owner') }}</span></div></div>

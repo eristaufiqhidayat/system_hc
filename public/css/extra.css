@@ -1,0 +1,59 @@
+/* Tambahan di luar mockup: tautan navigasi, form, notifikasi, halaman login, cetak, aplikasi HP. */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.nav a{box-sizing:border-box;cursor:pointer;display:flex;align-items:center;gap:10px;padding:7px 12px;border-radius:10px;font-size:14px;color:var(--ink);min-height:36px;text-decoration:none}
+.nav a svg{width:18px;height:18px;flex-shrink:0;stroke:var(--muted)}
+.nav a:hover{background:var(--bg)}
+.nav a[aria-current="page"]{background:var(--green-soft);color:var(--green-ink);font-weight:700}
+.nav a[aria-current="page"] svg{stroke:var(--green)}
+.nav a .cnt{margin-left:auto;background:var(--red);color:#fff;font-size:11px;font-weight:700;border-radius:999px;padding:1px 7px}
+a.btn,a.chip,a.tab,a.opt,a.kcard,a.cell,a.iconbtn{text-decoration:none;color:inherit}
+a.btn.pri{color:#fff}
+a.btn.ghost{color:var(--green)}
+.btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
+.me form{margin:0}
+.me .x svg{width:18px;height:18px;stroke:var(--muted)}
+form.inline{display:inline}
+.alert{background:var(--red-soft);color:var(--red-ink);border:1px solid #F1C3BF;border-radius:12px;padding:12px 16px;font-size:13px}
+.alert ul{margin:6px 0 0;padding-left:18px}
+.pager{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border-top:1px solid var(--line2);flex-wrap:wrap}
+.chip-link{display:inline-flex}
+.field .err{color:var(--red-ink);font-size:12px;margin-top:4px}
+select.sm{height:34px;font-size:13px;width:auto;padding:0 8px}
+.empty{padding:30px;text-align:center;color:var(--muted)}
+.stat-list .list-item b{white-space:nowrap}
+.check-form{display:flex;align-items:center;gap:10px;min-height:40px;width:100%}
+.check-form button{all:unset;cursor:pointer;display:flex;align-items:center;gap:10px;width:100%}
+.check-form .box{width:18px;height:18px;border-radius:4px;border:1.5px solid #9AA49D;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.check-form .box.on{background:var(--green);border-color:var(--green);color:#fff}
+.switch-btn{all:unset;cursor:pointer;position:relative;width:42px;height:24px;flex-shrink:0;border-radius:999px;background:#C9CFC9;transition:.2s}
+.switch-btn::after{content:"";position:absolute;width:18px;height:18px;left:3px;top:3px;border-radius:50%;background:#fff;transition:.2s}
+.switch-btn[aria-pressed="true"]{background:var(--green)}
+.switch-btn[aria-pressed="true"]::after{left:21px}
+.phone iframe{border:0;width:100%;flex-grow:1;background:var(--bg)}
+details.edit summary{list-style:none;cursor:pointer}
+details.edit summary::-webkit-details-marker{display:none}
+details.edit[open]{background:#FAFBFA;border-radius:10px;padding:0 10px 10px}
+.search-group h2{margin-bottom:6px}
+
+/* login */
+.auth{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:var(--bg)}
+.auth .card{width:400px;max-width:100%;padding:28px;gap:16px}
+.auth .logo{border:0;padding:0;justify-content:center;flex-direction:column;text-align:center}
+.auth .hint{font-size:12px;color:var(--muted);background:var(--bg);border-radius:10px;padding:10px 12px}
+
+/* aplikasi HP (web pemesanan, akun pelanggan, kurir) */
+body.mobile{background:var(--bg)}
+.mobile-shell{max-width:480px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;background:var(--bg)}
+.mobile-shell form{margin:0}
+.p-body form{display:flex;flex-direction:column;gap:16px}
+.qr svg{display:block}
+.stop form{margin:0}
+.upload{font-size:12px;color:var(--muted)}
+
+/* cetak */
+body.print{background:#fff;padding:24px}
+.print-bar{display:flex;gap:10px;margin-bottom:20px}
+.labels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.label-card{border:1px dashed #D9A15C;background:#FFFAF1;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:4px;break-inside:avoid}
+@media print{.no-print{display:none!important} body.print{padding:0} .card{break-inside:avoid}}
+.opt > b{white-space:nowrap}
